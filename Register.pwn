@@ -1,0 +1,451 @@
+//REGISTERTD BY NATHAN
+
+#include <a_samp>
+
+new Text:REGISTERTD;
+new Text:BGSKINTD;
+new Text:REGISTERTD1;
+new Text:REGISTERTD3;
+new Text:REGISTERTD2;
+new Text:REGISTERTD4;
+new Text:REGISTERTD6;
+new Text:REGISTERTD5;
+new Text:REGISTERTD7;
+new Text:REGISTERTD9;
+new Text:REGISTERTD11;
+new Text:REGISTERTD13;
+new Text:REGISTERTD14;
+new Text:REGISTERTD16;
+new Text:REGISTERTD15;
+new Text:REGISTERTD8;
+new Text:REGISTERTD10;
+new Text:REGISTERTD12;
+new Text:SKINBGTD;
+new Text:SKINTD;
+new Text:SKINTD2;
+new Text:SKINTD4;
+new Text:SKINDTD3;
+new Text:DONEBGTD;
+new Text:DONETD;
+
+public OnFilterScriptInit()
+{
+	REGISTERTD = TextDrawCreate(415.000000, 137.000000, "_");
+	TextDrawFont(REGISTERTD, 1);
+	TextDrawLetterSize(REGISTERTD, 0.600000, 17.549987);
+	TextDrawTextSize(REGISTERTD, 352.000000, 195.000000);
+	TextDrawSetOutline(REGISTERTD, 1);
+	TextDrawSetShadow(REGISTERTD, 0);
+	TextDrawAlignment(REGISTERTD, 2);
+	TextDrawColor(REGISTERTD, -1);
+	TextDrawBackgroundColor(REGISTERTD, 255);
+	TextDrawBoxColor(REGISTERTD, 241);
+	TextDrawUseBox(REGISTERTD, 1);
+	TextDrawSetProportional(REGISTERTD, 1);
+	TextDrawSetSelectable(REGISTERTD, 0);
+
+	BGSKINTD = TextDrawCreate(201.000000, 134.000000, "Preview_Model");
+	TextDrawFont(BGSKINTD, 5);
+	TextDrawLetterSize(BGSKINTD, 0.600000, 2.000000);
+	TextDrawTextSize(BGSKINTD, 109.500000, 164.000000);
+	TextDrawSetOutline(BGSKINTD, 0);
+	TextDrawSetShadow(BGSKINTD, 0);
+	TextDrawAlignment(BGSKINTD, 1);
+	TextDrawColor(BGSKINTD, -1);
+	TextDrawBackgroundColor(BGSKINTD, 125);
+	TextDrawBoxColor(BGSKINTD, 255);
+	TextDrawUseBox(BGSKINTD, 0);
+	TextDrawSetProportional(BGSKINTD, 1);
+	TextDrawSetSelectable(BGSKINTD, 0);
+	TextDrawSetPreviewModel(BGSKINTD, 2);
+	TextDrawSetPreviewRot(BGSKINTD, -10.000000, 0.000000, -20.000000, 1.000000);
+	TextDrawSetPreviewVehCol(BGSKINTD, 1, 1);
+
+	REGISTERTD1 = TextDrawCreate(319.000000, 145.000000, "ACCOUNT");
+	TextDrawFont(REGISTERTD1, 3);
+	TextDrawLetterSize(REGISTERTD1, 0.600000, 2.000000);
+	TextDrawTextSize(REGISTERTD1, 400.000000, 17.000000);
+	TextDrawSetOutline(REGISTERTD1, 1);
+	TextDrawSetShadow(REGISTERTD1, 0);
+	TextDrawAlignment(REGISTERTD1, 1);
+	TextDrawColor(REGISTERTD1, -1);
+	TextDrawBackgroundColor(REGISTERTD1, 255);
+	TextDrawBoxColor(REGISTERTD1, 50);
+	TextDrawUseBox(REGISTERTD1, 0);
+	TextDrawSetProportional(REGISTERTD1, 1);
+	TextDrawSetSelectable(REGISTERTD1, 0);
+
+	REGISTERTD3 = TextDrawCreate(458.000000, 151.000000, "_");
+	TextDrawFont(REGISTERTD3, 1);
+	TextDrawLetterSize(REGISTERTD3, 0.600000, 1.299988);
+	TextDrawTextSize(REGISTERTD3, 307.000000, 100.000000);
+	TextDrawSetOutline(REGISTERTD3, 1);
+	TextDrawSetShadow(REGISTERTD3, 0);
+	TextDrawAlignment(REGISTERTD3, 2);
+	TextDrawColor(REGISTERTD3, -1);
+	TextDrawBackgroundColor(REGISTERTD3, 255);
+	TextDrawBoxColor(REGISTERTD3, 1296911705);
+	TextDrawUseBox(REGISTERTD3, 1);
+	TextDrawSetProportional(REGISTERTD3, 1);
+	TextDrawSetSelectable(REGISTERTD3, 0);
+
+	REGISTERTD2 = TextDrawCreate(419.000000, 148.000000, "Nathan_Morgan");
+	TextDrawFont(REGISTERTD2, 1);
+	TextDrawLetterSize(REGISTERTD2, 0.333332, 1.549998);
+	TextDrawTextSize(REGISTERTD2, 400.000000, 17.000000);
+	TextDrawSetOutline(REGISTERTD2, 1);
+	TextDrawSetShadow(REGISTERTD2, 0);
+	TextDrawAlignment(REGISTERTD2, 1);
+	TextDrawColor(REGISTERTD2, -1);
+	TextDrawBackgroundColor(REGISTERTD2, 255);
+	TextDrawBoxColor(REGISTERTD2, 50);
+	TextDrawUseBox(REGISTERTD2, 0);
+	TextDrawSetProportional(REGISTERTD2, 1);
+	TextDrawSetSelectable(REGISTERTD2, 0);
+
+	REGISTERTD4 = TextDrawCreate(347.000000, 184.000000, "GENDER");
+	TextDrawFont(REGISTERTD4, 3);
+	TextDrawLetterSize(REGISTERTD4, 0.479166, 1.149999);
+	TextDrawTextSize(REGISTERTD4, 400.000000, 17.000000);
+	TextDrawSetOutline(REGISTERTD4, 1);
+	TextDrawSetShadow(REGISTERTD4, 0);
+	TextDrawAlignment(REGISTERTD4, 1);
+	TextDrawColor(REGISTERTD4, -1);
+	TextDrawBackgroundColor(REGISTERTD4, 255);
+	TextDrawBoxColor(REGISTERTD4, 50);
+	TextDrawUseBox(REGISTERTD4, 0);
+	TextDrawSetProportional(REGISTERTD4, 1);
+	TextDrawSetSelectable(REGISTERTD4, 0);
+
+	REGISTERTD6 = TextDrawCreate(458.000000, 184.000000, "_");
+	TextDrawFont(REGISTERTD6, 1);
+	TextDrawLetterSize(REGISTERTD6, 0.600000, 1.299988);
+	TextDrawTextSize(REGISTERTD6, 307.000000, 100.000000);
+	TextDrawSetOutline(REGISTERTD6, 1);
+	TextDrawSetShadow(REGISTERTD6, 0);
+	TextDrawAlignment(REGISTERTD6, 2);
+	TextDrawColor(REGISTERTD6, -1);
+	TextDrawBackgroundColor(REGISTERTD6, 255);
+	TextDrawBoxColor(REGISTERTD6, 1296911705);
+	TextDrawUseBox(REGISTERTD6, 1);
+	TextDrawSetProportional(REGISTERTD6, 1);
+	TextDrawSetSelectable(REGISTERTD6, 0);
+
+	REGISTERTD5 = TextDrawCreate(441.000000, 182.000000, "MALE");
+	TextDrawFont(REGISTERTD5, 1);
+	TextDrawLetterSize(REGISTERTD5, 0.333332, 1.549998);
+	TextDrawTextSize(REGISTERTD5, 400.000000, 17.000000);
+	TextDrawSetOutline(REGISTERTD5, 1);
+	TextDrawSetShadow(REGISTERTD5, 0);
+	TextDrawAlignment(REGISTERTD5, 1);
+	TextDrawColor(REGISTERTD5, -1);
+	TextDrawBackgroundColor(REGISTERTD5, 255);
+	TextDrawBoxColor(REGISTERTD5, 50);
+	TextDrawUseBox(REGISTERTD5, 0);
+	TextDrawSetProportional(REGISTERTD5, 1);
+	TextDrawSetSelectable(REGISTERTD5, 0);
+
+	REGISTERTD7 = TextDrawCreate(350.000000, 215.000000, "BIRTH_DATE");
+	TextDrawFont(REGISTERTD7, 3);
+	TextDrawLetterSize(REGISTERTD7, 0.295832, 1.049998);
+	TextDrawTextSize(REGISTERTD7, 400.000000, 17.000000);
+	TextDrawSetOutline(REGISTERTD7, 1);
+	TextDrawSetShadow(REGISTERTD7, 0);
+	TextDrawAlignment(REGISTERTD7, 1);
+	TextDrawColor(REGISTERTD7, -1);
+	TextDrawBackgroundColor(REGISTERTD7, 255);
+	TextDrawBoxColor(REGISTERTD7, 50);
+	TextDrawUseBox(REGISTERTD7, 0);
+	TextDrawSetProportional(REGISTERTD7, 1);
+	TextDrawSetSelectable(REGISTERTD7, 0);
+
+	REGISTERTD9 = TextDrawCreate(458.000000, 215.000000, "_");
+	TextDrawFont(REGISTERTD9, 1);
+	TextDrawLetterSize(REGISTERTD9, 0.600000, 1.299988);
+	TextDrawTextSize(REGISTERTD9, 307.000000, 100.000000);
+	TextDrawSetOutline(REGISTERTD9, 1);
+	TextDrawSetShadow(REGISTERTD9, 0);
+	TextDrawAlignment(REGISTERTD9, 2);
+	TextDrawColor(REGISTERTD9, -1);
+	TextDrawBackgroundColor(REGISTERTD9, 255);
+	TextDrawBoxColor(REGISTERTD9, 1296911705);
+	TextDrawUseBox(REGISTERTD9, 1);
+	TextDrawSetProportional(REGISTERTD9, 1);
+	TextDrawSetSelectable(REGISTERTD9, 0);
+
+	REGISTERTD11 = TextDrawCreate(458.000000, 235.000000, "_");
+	TextDrawFont(REGISTERTD11, 1);
+	TextDrawLetterSize(REGISTERTD11, 0.600000, 1.299988);
+	TextDrawTextSize(REGISTERTD11, 307.000000, 100.000000);
+	TextDrawSetOutline(REGISTERTD11, 1);
+	TextDrawSetShadow(REGISTERTD11, 0);
+	TextDrawAlignment(REGISTERTD11, 2);
+	TextDrawColor(REGISTERTD11, -1);
+	TextDrawBackgroundColor(REGISTERTD11, 255);
+	TextDrawBoxColor(REGISTERTD11, 1296911705);
+	TextDrawUseBox(REGISTERTD11, 1);
+	TextDrawSetProportional(REGISTERTD11, 1);
+	TextDrawSetSelectable(REGISTERTD11, 0);
+
+	REGISTERTD13 = TextDrawCreate(458.000000, 254.000000, "_");
+	TextDrawFont(REGISTERTD13, 1);
+	TextDrawLetterSize(REGISTERTD13, 0.600000, 1.299988);
+	TextDrawTextSize(REGISTERTD13, 307.000000, 100.000000);
+	TextDrawSetOutline(REGISTERTD13, 1);
+	TextDrawSetShadow(REGISTERTD13, 0);
+	TextDrawAlignment(REGISTERTD13, 2);
+	TextDrawColor(REGISTERTD13, -1);
+	TextDrawBackgroundColor(REGISTERTD13, 255);
+	TextDrawBoxColor(REGISTERTD13, 1296911705);
+	TextDrawUseBox(REGISTERTD13, 1);
+	TextDrawSetProportional(REGISTERTD13, 1);
+	TextDrawSetSelectable(REGISTERTD13, 0);
+
+	REGISTERTD14 = TextDrawCreate(327.000000, 280.000000, "PASSWORD_______:");
+	TextDrawFont(REGISTERTD14, 3);
+	TextDrawLetterSize(REGISTERTD14, 0.295832, 1.049998);
+	TextDrawTextSize(REGISTERTD14, 400.000000, 17.000000);
+	TextDrawSetOutline(REGISTERTD14, 1);
+	TextDrawSetShadow(REGISTERTD14, 0);
+	TextDrawAlignment(REGISTERTD14, 1);
+	TextDrawColor(REGISTERTD14, -1);
+	TextDrawBackgroundColor(REGISTERTD14, 255);
+	TextDrawBoxColor(REGISTERTD14, 50);
+	TextDrawUseBox(REGISTERTD14, 0);
+	TextDrawSetProportional(REGISTERTD14, 1);
+	TextDrawSetSelectable(REGISTERTD14, 0);
+
+	REGISTERTD16 = TextDrawCreate(458.000000, 280.000000, "_");
+	TextDrawFont(REGISTERTD16, 1);
+	TextDrawLetterSize(REGISTERTD16, 0.600000, 1.299988);
+	TextDrawTextSize(REGISTERTD16, 307.000000, 100.000000);
+	TextDrawSetOutline(REGISTERTD16, 1);
+	TextDrawSetShadow(REGISTERTD16, 0);
+	TextDrawAlignment(REGISTERTD16, 2);
+	TextDrawColor(REGISTERTD16, -1);
+	TextDrawBackgroundColor(REGISTERTD16, 255);
+	TextDrawBoxColor(REGISTERTD16, 1296911705);
+	TextDrawUseBox(REGISTERTD16, 1);
+	TextDrawSetProportional(REGISTERTD16, 1);
+	TextDrawSetSelectable(REGISTERTD16, 0);
+
+	REGISTERTD15 = TextDrawCreate(441.000000, 278.000000, "NONE");
+	TextDrawFont(REGISTERTD15, 1);
+	TextDrawLetterSize(REGISTERTD15, 0.333332, 1.549998);
+	TextDrawTextSize(REGISTERTD15, 400.000000, 17.000000);
+	TextDrawSetOutline(REGISTERTD15, 1);
+	TextDrawSetShadow(REGISTERTD15, 0);
+	TextDrawAlignment(REGISTERTD15, 1);
+	TextDrawColor(REGISTERTD15, -1);
+	TextDrawBackgroundColor(REGISTERTD15, 255);
+	TextDrawBoxColor(REGISTERTD15, 50);
+	TextDrawUseBox(REGISTERTD15, 0);
+	TextDrawSetProportional(REGISTERTD15, 1);
+	TextDrawSetSelectable(REGISTERTD15, 0);
+
+	REGISTERTD8 = TextDrawCreate(447.000000, 213.000000, "1999");
+	TextDrawFont(REGISTERTD8, 1);
+	TextDrawLetterSize(REGISTERTD8, 0.333332, 1.549998);
+	TextDrawTextSize(REGISTERTD8, 400.000000, 17.000000);
+	TextDrawSetOutline(REGISTERTD8, 1);
+	TextDrawSetShadow(REGISTERTD8, 0);
+	TextDrawAlignment(REGISTERTD8, 1);
+	TextDrawColor(REGISTERTD8, -1);
+	TextDrawBackgroundColor(REGISTERTD8, 255);
+	TextDrawBoxColor(REGISTERTD8, 50);
+	TextDrawUseBox(REGISTERTD8, 0);
+	TextDrawSetProportional(REGISTERTD8, 1);
+	TextDrawSetSelectable(REGISTERTD8, 0);
+
+	REGISTERTD10 = TextDrawCreate(432.000000, 233.000000, "DESEMBER");
+	TextDrawFont(REGISTERTD10, 1);
+	TextDrawLetterSize(REGISTERTD10, 0.333332, 1.549998);
+	TextDrawTextSize(REGISTERTD10, 400.000000, 17.000000);
+	TextDrawSetOutline(REGISTERTD10, 1);
+	TextDrawSetShadow(REGISTERTD10, 0);
+	TextDrawAlignment(REGISTERTD10, 1);
+	TextDrawColor(REGISTERTD10, -1);
+	TextDrawBackgroundColor(REGISTERTD10, 255);
+	TextDrawBoxColor(REGISTERTD10, 50);
+	TextDrawUseBox(REGISTERTD10, 0);
+	TextDrawSetProportional(REGISTERTD10, 1);
+	TextDrawSetSelectable(REGISTERTD10, 0);
+
+	REGISTERTD12 = TextDrawCreate(451.000000, 251.000000, "23");
+	TextDrawFont(REGISTERTD12, 1);
+	TextDrawLetterSize(REGISTERTD12, 0.333332, 1.549998);
+	TextDrawTextSize(REGISTERTD12, 400.000000, 17.000000);
+	TextDrawSetOutline(REGISTERTD12, 1);
+	TextDrawSetShadow(REGISTERTD12, 0);
+	TextDrawAlignment(REGISTERTD12, 1);
+	TextDrawColor(REGISTERTD12, -1);
+	TextDrawBackgroundColor(REGISTERTD12, 255);
+	TextDrawBoxColor(REGISTERTD12, 50);
+	TextDrawUseBox(REGISTERTD12, 0);
+	TextDrawSetProportional(REGISTERTD12, 1);
+	TextDrawSetSelectable(REGISTERTD12, 0);
+
+	SKINBGTD = TextDrawCreate(255.000000, 307.000000, "_");
+	TextDrawFont(SKINBGTD, 1);
+	TextDrawLetterSize(SKINBGTD, 0.600000, 1.299988);
+	TextDrawTextSize(SKINBGTD, 307.000000, 100.000000);
+	TextDrawSetOutline(SKINBGTD, 1);
+	TextDrawSetShadow(SKINBGTD, 0);
+	TextDrawAlignment(SKINBGTD, 2);
+	TextDrawColor(SKINBGTD, -1);
+	TextDrawBackgroundColor(SKINBGTD, 255);
+	TextDrawBoxColor(SKINBGTD, 162);
+	TextDrawUseBox(SKINBGTD, 1);
+	TextDrawSetProportional(SKINBGTD, 1);
+	TextDrawSetSelectable(SKINBGTD, 0);
+
+	SKINTD = TextDrawCreate(210.000000, 307.000000, "SKIN");
+	TextDrawFont(SKINTD, 3);
+	TextDrawLetterSize(SKINTD, 0.295832, 1.049998);
+	TextDrawTextSize(SKINTD, 400.000000, 17.000000);
+	TextDrawSetOutline(SKINTD, 1);
+	TextDrawSetShadow(SKINTD, 0);
+	TextDrawAlignment(SKINTD, 1);
+	TextDrawColor(SKINTD, -1);
+	TextDrawBackgroundColor(SKINTD, 255);
+	TextDrawBoxColor(SKINTD, 50);
+	TextDrawUseBox(SKINTD, 0);
+	TextDrawSetProportional(SKINTD, 1);
+	TextDrawSetSelectable(SKINTD, 0);
+
+	SKINTD2 = TextDrawCreate(235.000000, 304.000000, "ld_beat:left");
+	TextDrawFont(SKINTD2, 4);
+	TextDrawLetterSize(SKINTD2, 0.600000, 2.000000);
+	TextDrawTextSize(SKINTD2, 17.000000, 17.000000);
+	TextDrawSetOutline(SKINTD2, 1);
+	TextDrawSetShadow(SKINTD2, 0);
+	TextDrawAlignment(SKINTD2, 1);
+	TextDrawColor(SKINTD2, -1);
+	TextDrawBackgroundColor(SKINTD2, 255);
+	TextDrawBoxColor(SKINTD2, 50);
+	TextDrawUseBox(SKINTD2, 1);
+	TextDrawSetProportional(SKINTD2, 1);
+	TextDrawSetSelectable(SKINTD2, 0);
+
+	SKINTD4 = TextDrawCreate(276.000000, 305.000000, "ld_beat:right");
+	TextDrawFont(SKINTD4, 4);
+	TextDrawLetterSize(SKINTD4, 0.600000, 2.000000);
+	TextDrawTextSize(SKINTD4, 17.000000, 17.000000);
+	TextDrawSetOutline(SKINTD4, 1);
+	TextDrawSetShadow(SKINTD4, 0);
+	TextDrawAlignment(SKINTD4, 1);
+	TextDrawColor(SKINTD4, -1);
+	TextDrawBackgroundColor(SKINTD4, 255);
+	TextDrawBoxColor(SKINTD4, 50);
+	TextDrawUseBox(SKINTD4, 1);
+	TextDrawSetProportional(SKINTD4, 1);
+	TextDrawSetSelectable(SKINTD4, 0);
+
+	SKINDTD3 = TextDrawCreate(255.000000, 307.000000, "299");
+	TextDrawFont(SKINDTD3, 3);
+	TextDrawLetterSize(SKINDTD3, 0.295832, 1.049998);
+	TextDrawTextSize(SKINDTD3, 400.000000, 17.000000);
+	TextDrawSetOutline(SKINDTD3, 1);
+	TextDrawSetShadow(SKINDTD3, 0);
+	TextDrawAlignment(SKINDTD3, 1);
+	TextDrawColor(SKINDTD3, -1);
+	TextDrawBackgroundColor(SKINDTD3, 255);
+	TextDrawBoxColor(SKINDTD3, 50);
+	TextDrawUseBox(SKINDTD3, 0);
+	TextDrawSetProportional(SKINDTD3, 1);
+	TextDrawSetSelectable(SKINDTD3, 0);
+
+	DONEBGTD = TextDrawCreate(487.000000, 305.000000, "_");
+	TextDrawFont(DONEBGTD, 1);
+	TextDrawLetterSize(DONEBGTD, 0.087499, 1.049988);
+	TextDrawTextSize(DONEBGTD, 307.000000, 46.000000);
+	TextDrawSetOutline(DONEBGTD, 1);
+	TextDrawSetShadow(DONEBGTD, 0);
+	TextDrawAlignment(DONEBGTD, 2);
+	TextDrawColor(DONEBGTD, -1);
+	TextDrawBackgroundColor(DONEBGTD, 255);
+	TextDrawBoxColor(DONEBGTD, -741092353);
+	TextDrawUseBox(DONEBGTD, 1);
+	TextDrawSetProportional(DONEBGTD, 1);
+	TextDrawSetSelectable(DONEBGTD, 0);
+
+	DONETD = TextDrawCreate(467.000000, 302.000000, "CREATE");
+	TextDrawFont(DONETD, 1);
+	TextDrawLetterSize(DONETD, 0.333332, 1.549998);
+	TextDrawTextSize(DONETD, 400.000000, 17.000000);
+	TextDrawSetOutline(DONETD, 1);
+	TextDrawSetShadow(DONETD, 0);
+	TextDrawAlignment(DONETD, 1);
+	TextDrawColor(DONETD, -1);
+	TextDrawBackgroundColor(DONETD, 255);
+	TextDrawBoxColor(DONETD, 50);
+	TextDrawUseBox(DONETD, 0);
+	TextDrawSetProportional(DONETD, 1);
+	TextDrawSetSelectable(DONETD, 0);
+
+	return 1;
+}
+
+public OnFilterScriptExit()
+{
+	TextDrawDestroy(REGISTERTD);
+	TextDrawDestroy(BGSKINTD);
+	TextDrawDestroy(REGISTERTD1);
+	TextDrawDestroy(REGISTERTD3);
+	TextDrawDestroy(REGISTERTD2);
+	TextDrawDestroy(REGISTERTD4);
+	TextDrawDestroy(REGISTERTD6);
+	TextDrawDestroy(REGISTERTD5);
+	TextDrawDestroy(REGISTERTD7);
+	TextDrawDestroy(REGISTERTD9);
+	TextDrawDestroy(REGISTERTD11);
+	TextDrawDestroy(REGISTERTD13);
+	TextDrawDestroy(REGISTERTD14);
+	TextDrawDestroy(REGISTERTD16);
+	TextDrawDestroy(REGISTERTD15);
+	TextDrawDestroy(REGISTERTD8);
+	TextDrawDestroy(REGISTERTD10);
+	TextDrawDestroy(REGISTERTD12);
+	TextDrawDestroy(SKINBGTD);
+	TextDrawDestroy(SKINTD);
+	TextDrawDestroy(SKINTD2);
+	TextDrawDestroy(SKINTD4);
+	TextDrawDestroy(SKINDTD3);
+	TextDrawDestroy(DONEBGTD);
+	TextDrawDestroy(DONETD);
+	return 1;
+}
+
+public OnPlayerCommandText(playerid, cmdtext[])
+{
+	if(!strcmp(cmdtext, "/tdtest", true))
+	{
+		TextDrawShowForPlayer(playerid, REGISTERTD);
+		TextDrawShowForPlayer(playerid, BGSKINTD);
+		TextDrawShowForPlayer(playerid, REGISTERTD1);
+		TextDrawShowForPlayer(playerid, REGISTERTD3);
+		TextDrawShowForPlayer(playerid, REGISTERTD2);
+		TextDrawShowForPlayer(playerid, REGISTERTD4);
+		TextDrawShowForPlayer(playerid, REGISTERTD6);
+		TextDrawShowForPlayer(playerid, REGISTERTD5);
+		TextDrawShowForPlayer(playerid, REGISTERTD7);
+		TextDrawShowForPlayer(playerid, REGISTERTD9);
+		TextDrawShowForPlayer(playerid, REGISTERTD11);
+		TextDrawShowForPlayer(playerid, REGISTERTD13);
+		TextDrawShowForPlayer(playerid, REGISTERTD14);
+		TextDrawShowForPlayer(playerid, REGISTERTD16);
+		TextDrawShowForPlayer(playerid, REGISTERTD15);
+		TextDrawShowForPlayer(playerid, REGISTERTD8);
+		TextDrawShowForPlayer(playerid, REGISTERTD10);
+		TextDrawShowForPlayer(playerid, REGISTERTD12);
+		TextDrawShowForPlayer(playerid, SKINBGTD);
+		TextDrawShowForPlayer(playerid, SKINTD);
+		TextDrawShowForPlayer(playerid, SKINTD2);
+		TextDrawShowForPlayer(playerid, SKINTD4);
+		TextDrawShowForPlayer(playerid, SKINDTD3);
+		TextDrawShowForPlayer(playerid, DONEBGTD);
+		TextDrawShowForPlayer(playerid, DONETD);
+		return 1;
+	}
+	return 0;
+}
